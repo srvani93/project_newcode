@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<style> 
+	#myDiv {
+  border: thin dotted red;
+	}
+	</style>
+</head>
+<body style="background-color:rgb(12, 12, 12);">
+
+	<div id="myDiv">
+	
+<h2 style="text-align:center;COLOR:rgb(237, 237, 10);font-weight: 1000;font-size: xx-large;font-style: italic;font-family: Arial, Helvetica, sans-serif;">COMPETITIVE INTELLIGENCE</h2>
+ <form  action="{{ url_for('form_data')}}" method="POST">
+	
+	<p style="text-align:center"><FONT COLOR="#fffff">
+		<label>ENTER COMPANY NAME : <input type="text" name="company_name" /></label>
+		</FONT>
+		</p>
+		<p style="text-align:center"><FONT COLOR="#fffff">
+			<label>ENTER KEYWORD : <input type="text" name="keyword" /></label>
+			</FONT>
+			</p>
+	
+	
+	<p style="text-align:center"><FONT COLOR="#fffff">
+		<label for='start_time'>Please Enter start date (date):</label>
+		<input type="date" id="company_time" name="start_time">
+			</FONT>
+			</p>
+			
+	<p style="text-align:center"><FONT COLOR="#fffff">
+		<label for='end_time'>Please Enter end date (date):</label>
+		<input type="date" id="company_time" name="end_time">
+			</p>
+		</FONT>
+				
+			
+	
+<p style="text-align:center">
+	<button type="submit">Submit</button>
+	</p>
+	</div>
+
+
+<p><FONT COLOR="#fffff">
+    {{result}}
+</FONT>
+	</p>
+
+</form>
+</body>
+</html>
